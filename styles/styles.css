@@ -12,6 +12,11 @@
 .display-flex{
     display: flex;
 }
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
 .org{
     color: rgba(255, 144, 14, 1);
 }
@@ -24,7 +29,7 @@
 .dark-03{
     color: rgba(114, 114, 114, 1);
 }
-h3{
+h3, h1, p{
     margin: 0;
 }
 .btn-primary{
@@ -35,6 +40,7 @@ h3{
     font-size: 1.25rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
+    margin-top: 25px;
 }
 section{
     max-width: 1440px;
@@ -51,10 +57,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.nav-title{
-    font-size: 3rem;
-    font-weight: bold;
-}
+
 .nav-item{
     list-style: none;
     margin-right: 30px;
@@ -79,6 +82,7 @@ header{
 .banner-title{
     font-size: 4rem;
     font-weight: bold;
+    margin-bottom: 35px;
 }
 .banner-description{
     font-size: 1rem;
@@ -101,15 +105,37 @@ header{
     max-width: 540px;
     margin-left: 100px;
 }
-.features-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-}
-#quick{
+ #quick{
     font-weight: 600;
 }
 .features-description{
     font-size: 1rem;
+    font-weight: 400;
+}
+.facts-container{
+    display: grid;
+     grid-template-columns: repeat(4, 1fr);
+}
+.facts-box{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    padding: 15px 20px;
+    width: 242px;
+    height: 242px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+ 
+}
+.facts-title{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 8px 0 8px 0;
+}
+.facts-description{
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
