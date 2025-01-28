@@ -33,6 +33,11 @@ h3{
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
 }
+section{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
     
 
 /* header styles */
@@ -79,10 +84,36 @@ header{
 .banner-img{
     width: 100%;
 }
+/* main styles */
+.featuers{
+    align-items: center;
+}
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-radius: 8px;
+}
+.features-content{
+    max-width: 540px;
+    margin-left: 80px;
+}
+.features-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.features-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navbar{
+    .navbar,
+    .featuers{
         flex-direction: column;
+    }
+    .featuers{
+        gap: 20px;
     }
 }
