@@ -134,8 +134,18 @@ header{
     margin-top: 30px;
 }
 .architect-img{
-    max-width: 708px;
-    max-height: 800px;
+    width: 100%;
+}
+#experience-badge{
+    padding: 45px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -120px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
 }
 .facts-container{
     display: grid;
@@ -180,7 +190,8 @@ header{
 /* responsive media query */
 @media screen and (max-width:576px) {
     .navbar,
-    .featuers{
+    .featuers, 
+    .experience-container{
         flex-direction: column;
     }
     .featuers{
@@ -202,12 +213,20 @@ header{
     .facts-container{
         justify-items: center;
      }
+     .experience-container{
+        gap: 50px;
+     }
+     #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+     }
 
 }
 
 /* responsive for medium device */
 @media screen and (min-width:576px) and (max-width:992px ) {
-    .featuers{
+    .featuers, 
+    .experience-container{
         flex-direction: column;
     }
     .featuers{
@@ -215,6 +234,20 @@ header{
      }
      .features-content{
          margin: 50px auto;
+     }
+     .experience-container{
+       gap: 70px;
+        
+     }
+     .experience-container{
+        align-items: center;
+        justify-items: center;
+     }
+     #experience-badge{
+        align-items: center;
+        justify-items: center;
+        margin-top: -100px;
+        margin-left: 230px;
      }
      .facts, 
      .facts > div{
