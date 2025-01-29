@@ -134,7 +134,7 @@ header{
     margin-top: 30px;
 }
 .architect-img{
-    width: 100%;
+  width: 100%;
 }
 #experience-badge{
     padding: 45px;
@@ -186,6 +186,13 @@ header{
  .sponspor-img{
     filter: grayscale(100%);
  }
+ .footer-description{
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: rgba(255, 244, 231, 1);
+    border-radius: 8px;
+    padding: 38px 410px;
+ }
 
 /* responsive media query */
 @media screen and (max-width:576px) {
@@ -219,6 +226,10 @@ header{
      #experience-badge{
         margin-top: 20px;
         margin-left: 20px;
+     }
+     .footer-description{
+        text-align: center;
+        padding: 20px;
      }
 
 }
@@ -260,6 +271,10 @@ header{
      .sponspor-container{
         gap: 40px;
         justify-items: center;
+     }
+     .footer-description{
+        text-align: center;
+        padding: 40px;
      }
 }
  
